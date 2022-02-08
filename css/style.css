@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h3{
+    margin: 6px 0;
+}
+.container{
+    padding: 10px;
+}
+.main{
+    display: flex;
+}
+.main .nav{
+    width: 17%;
+}
+.main .nav li{
+    list-style: none;
+    background: lightblue;
+    padding: 8px;
+    margin-bottom: 7px;
+}
+.main a{
+    color: black;
+    text-decoration: none;
+}
+.content{
+    width: 60%;
+    margin: 10px;
+}
+.side{
+    width:23%;
+    background: lightblue;
+    padding: 10px;
+}
+/* responsiveness */
+@media screen and (max-width:600px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .main .nav{
+        width: 100%;
+    }
+    .content{
+        width: 100%;
+    }
+    h1, h3{
+        text-align: center;
+    }
+    .side{
+        width: 100%;
+    }
+}
